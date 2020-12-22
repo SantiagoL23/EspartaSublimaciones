@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#131313;
+    font-family:sans-serif;
+}
+
+.contenedor{
+    width: 95%;
+    margin:auto;
+}
+
+header{
+    margin:10px 50px; /* arriba-abajo y izquierda-derecha*/
+    
+}
+
+
+header .contenedor{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;    
+ 
+    
+   
+ 
+}
+
+header .logo{
+    
+    color:#fff;
+    font-size: 18px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+header #input_buscar{
+    padding:5px 90px;
+    margin-left:100px;
+    background:rgba(255, 255, 255, 0.815);
+    outline:none;
+    border-radius:30px;
+    text-align:center;
+    border:none;
+    transition:0.3s;
+}
+
+header #input_buscar:hover{
+   background:rgba(255, 255, 255, 0.87);
+}
+
+header #input_buscar:focus{
+padding:5px 115px;
+background:rgba(255, 255, 255, 0.87);
+}
+header nav a{
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    margin:0 20px;
+}
+
+header nav a:hover{
+    color:rgba(255, 255, 255, 0.89);
+}
+
+.fondo{
+    margin-top:15px;
+    color:#fff;
+    min-height:320px;
+    background:url("img/76f23ef08dc1ebabf4589ca0daa1fc14.jpg");
+    display:flex;
+}
+
+.fondo .titulo{
+    font-size:50px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.466);
+}
+
+.titulo .sublimaciones{
+    color:rgb(255, 166, 0);
+}
+
+ .fondo .descripcion{
+    margin:30px 0 0 10px;
+    width:70%;
+   
+}
+
+#productos{
+    display:flex;
+    justify-content:center;
+    color:#fff;
+    font-weight: 300;
+    font-size:40px;
+    margin-top:50px;
+
+}
+
+#hr1{
+    background:rgb(255, 10, 112);
+    border:none;
+    height:4px;
+}
+
+.contenedor_tarjetas{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  box-sizing: border-box;
+    
+}
+
+.muestra{
+    margin:50px;
+    background:white;
+    width:205px;
+    height:270px;
+    padding:3px;
+    border-radius:15px;
+    transition:0.2s;
+    flex-wrap: wrap;
+    min-width:205px;
+  
+}
+
+.muestra:hover{
+    height:290px;
+    width:225px;
+    
+    box-sizing: border-box;
+    
+}
+
+
+.hr_2{
+    background:rgba(255, 255, 255, 0.11);
+    align-items:center;
+}
+.about{
+    margin:50px;
+    display:flex;
+    color:white;
+    justify-content:center;
+    font-weight: 300;
+    font-size:38px;
+}
+.section2{
+    display:flex;
+    justify-content: space-between;
+    
+    
+
+}
+.section2 .mapa{
+  
+    margin:60px;
+    border-radius:15px;
+    width:300px;
+    height:300px;
+    
+}
+
+.mapa:hover{
+box-shadow:2px 2px 10px  rgba(155, 155, 155, 0.521);
+}
+
+
+
+.section2 .descripcion{
+    color:rgba(255, 255, 255, 0.664);
+    font-size:60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    margin-right:400px;
+}
+.section2 .descripcion::first-line{
+    font-weight: 400;
+    color:rgba(255, 255, 255, 0.884);
+
+}
+
+.informacion{
+   position:absolute;
+    color:rgba(255, 255, 255, 0.918);
+    width:45%;
+    margin:-220px 0px 0px 500px;
+    
+}
+
+.contenedor_footer{
+    display: flex;
+    justify-content: center;
+}
+
+.p_footer{
+    color:white;
+    font-size:15px;
+    
+}
+
+
+.p_footer:hover{
+   color:rgb(72, 218, 255);
+    
+}
+
+@media (max-width:1012px){
+
+.contenedor_tarjetas{
+    display:block;
+   
+}
+.muestra{
+    margin:auto;
+}
+header .contenedor{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+       
+header .logo{
+margin:2px;
+text-align:center;
+
+}
+header #input_buscar{
+margin: 1px;
+margin-bottom:4px;
+}
+
+.muestra:hover{
+    width:205px;
+    height:270px;
+}
+
+.informacion{
+    margin:-220px 0px 0px 428px;
+}
+
+header .logo {
+    font-size:30px;
+}
+
+header #input_buscar{
+    padding:5px 90px;
+    
+}
+header nav a{
+    font-size:20px;
+   display:flex;
+   justify-content: space-between;
+    
+}
+
+.design{
+    display:none;
+}
+
+
+}
+
+@media(max-width:1269px){
+    .informacion{
+        margin:-220px 0px 0px 428px;
+    }
+
+   
+}
